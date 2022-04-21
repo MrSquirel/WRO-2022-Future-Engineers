@@ -1,1 +1,95 @@
-# WRO-2022-Future-Engineers
+WRO-2022-Future-Engineer
+===========================
+
+In this repository you can see all our documentation files: programs, robot photo, team photo, robot presentation video.  
+
+Description of files
+---------------------------
+Our robot is controlled by the following programs:  
+**main.py** is the program that is loaded into PyBoard. This program receives data from the **Raspberry** and controls the servo and motor.  
+**qualification.py** (for qualification) or **Final.py** (for final) - these programs are loaded on Raspberry. These programs contain the driving algorithm itself, and also these programs read the readings from the camera and process them. These programs also send other data to PyBoard.  
+**RobotAPI.py** is the library that **Raspberry** uses to read the image from the camera.  
+**start_robot.py** is an application for connecting a **Raspberry**, displaying an image from a camera, and launching programs.  
+**autosatrt.py** is a program that starts automatically after turning on the **Raspberry**. It loads **qualification.py** or **Final.py**.  
+
+main.py
+---------------------------
+**main.py** - this program on **PyBoard** waits for the message "9999999" from Raspberry that the system has booted and the buzzer is triggered. After that, she is ready to start. It waits for subsequent messages from **Raspberry** in which the speed of the motor and the angle of rotation of the servo are already transmitted, and after decrypting the message, it transmits the data to the motor and servo.
+
+qualification.py
+---------------------------
+**qualification.py** is a **Raspberry** program. After starting the **Raspberry**, it sends the message “9999999” to the **PyBoard**, which means that the **Raspberry** has started and is ready to work, after which the data from the camera is read and displayed. There are two sensors on the sides of the display that determine the black color, in order to ride along the walls to the left and to the right, as the robot rides on one sensor, there is also an HSV sensor in the center that reads blue and orange lines.  
+The program works according to the following algorithm:
+First, the robot is in state 0 in which it centers the position of the servo and waits for a button to be pressed.  
+After the button has been pressed, the robot goes to state 2 (goes to state 2 immediately, since state 1 is in manual control) in which the robot travels along two sensors using the PD controller until the first intersection.  
+After the robot reaches the first line, the program remembers what this line was and goes to state 3. In state 3, the program checks which line was seen first, if blue then the robot turns left and if orange then right, this is done so that the robot reads only one line.  
+After turning, the robot goes to state 4. In state 4, the robot also uses the data that was collected in state 2, namely what color the line was and based on this determines which sensor to go if blue is on the right if orange is on the left and it goes until he sees the line and then goes back to state 3 and the algorithm repeats.  
+After the robot has passed 12 lines, this means that it has passed 12 turns, that is, 3 laps, and the program ends with a speed reset to zero.
+
+Final.py
+---------------------------
+**Final.py** is a similar program with the same algorithm, only one more HSV sensor is added above the color detection sensor that reads red and green, since the barrels that the robot must go around are painted in it. In state 4, a condition is added if he notices a green barrel, then the robot turns left, and if red, then right. Also in this program, the speed for high-speed passage has been increased.
+
+autostart.py
+---------------------------
+**autostart.py** as described above is a program that automatically starts when the robot is turned on. In order to load a launch program into **autostart.py**, for example, **qualification.py,** you need to:  
+* Open the **autostart.py** file.
+* Find the **import** line.
+* Enter the name of the file that should start automatically in this line.
+
+
+Software installation
+===========================
+Our robot is programmed with **PyCharm** and uses the **Python** language. Here are instructions on how to install all the necessary software and open the repository.
+1. **Installing PyCharm.**
+	* Go to the official **Pycharm** website.
+	* Next, select the Windows operating system.
+	* Click the **download** button.
+	* Next, the installation file will be downloaded.
+	* After installation, open and run the file.
+	* Next, select the options you need.
+2. **Installing Python version 3.9.**
+	* Go to the official **Python** website.
+	* Click on the **download** button.
+	* Scroll down, you will see a list of versions available for download, select **Python 3.9.**
+	* You will see a page for this version, scroll down and select the version for the 64-bit operating system.
+	* The next step is to install the language file.
+	* Once it is installed, launch it, select the options you want, and download the language.
+	* Then we go into **PyCharm**, in the upper left corner there will be a **“File”** button.
+	* Then click on the **"Settings"** button.
+	* Then go to this section and select **Python 3.9.  **
+2. **Installing a folder with a project from the Github repository.**
+	* To get started, go to the main page of the repository.
+	* Then click on the green **"Code"** button, then download the zip file.
+	* The download of the project archive should begin.
+	* Then unzip the file to a regular folder.
+
+Connecting to PyBoard
+---------------------------
+To connect to **PyBoard**, you need a microUSB cable, one end must be connected to **PyBoard**, and the other end to the computer, after which **PyBoard** will open as a USB flash drive and all that remains is to transfer the **main.py** file. Then you should wait until the red LED goes out and press the reset button on the board.
+
+Starting the robot
+---------------------------
+* Insert the batteries into the battery compartment of the robot. Do not confuse + and - batteries to avoid consequences.
+* Press the big red power button.
+* After the power is supplied, do not rush to turn on the robot, since the Raspberry has not yet started, when the Raspberry boots up, a squeaker will sound, which means that the robot is ready to start.
+
+Uploading a project to a robot
+---------------------------
+* Open **PyCharm** and click on the **“File”** button.
+* Click on the **“Open”** button.
+* By poking through the folders, find the unzipped **GitHub** repository **WRO-2022-Future-Engineers**.
+* You must open the project folder.
+* Launch **Raspberry** and connect to it via Wi-Fi.
+* Now return to **PyCharm** in the project files menu, select and open the **start_robot** program.
+* On the right side of the buttons at the top of the screen, click the **“Run”** button.
+* In the small window that opens, select **start_robot**
+* This window will open
+* To download the program, click on the **“load start”** button
+* The **“start”** button is used to start the program.
+* The **“stop”** button is used to stop the program.
+* To start the test program, use the **“Raw”** button; at startup, just an image and FPS are displayed to check the performance.
+* **“Video”** button is used to output video
+* To connect to the robot, press the **“connect to robot”** button and then a window will pop up with connected devices via Wi-Fi
+* Click on the top line
+* After that, **Raspberry** will successfully connect to the program.
