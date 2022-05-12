@@ -43,24 +43,36 @@ Software installation
 Our robot is programmed with **PyCharm** and uses the **Python** language. Here are instructions on how to install all the necessary software and open the repository.
 1. **Installing PyCharm.**
 	* Go to the official **Pycharm** website.
+	![12й](https://user-images.githubusercontent.com/99865132/168006290-20d750a5-c94d-40dd-bf8e-92b863529f8f.png)
 	* Next, select the Windows operating system.
 	* Click the **download** button.
 	* Next, the installation file will be downloaded.
+	![13й](https://user-images.githubusercontent.com/99865132/168006320-a603946c-1eb0-498d-ba2a-ac392610b678.png)
 	* After installation, open and run the file.
 	* Next, select the options you need.
 2. **Installing Python version 3.9.**
 	* Go to the official **Python** website.
+	![14й](https://user-images.githubusercontent.com/99865132/168006348-5e8710ac-00d2-4672-b926-e78335f867d2.png)
 	* Click on the **download** button.
+	![15й](https://user-images.githubusercontent.com/99865132/168006375-5048e824-c618-4d20-9937-26fa530af35a.png)
 	* Scroll down, you will see a list of versions available for download, select **Python 3.9.**
+	![16й](https://user-images.githubusercontent.com/99865132/168006407-58c166cb-3fab-46ab-8094-a12b762814be.png)
 	* You will see a page for this version, scroll down and select the version for the 64-bit operating system.
+	![17й](https://user-images.githubusercontent.com/99865132/168006434-e10061fc-f4fb-4eb0-85af-29714b226280.png)
 	* The next step is to install the language file.
 	* Once it is installed, launch it, select the options you want, and download the language.
 	* Then we go into **PyCharm**, in the upper left corner there will be a **“File”** button.
+	![18й](https://user-images.githubusercontent.com/99865132/168006479-0790610f-7114-4a1f-acc5-18fc41d6f2a8.png)
 	* Then click on the **"Settings"** button.
+	![19й](https://user-images.githubusercontent.com/99865132/168006522-b4163917-95d2-43b4-b8ac-4bbaf6a99552.png)
 	* Then go to this section and select **Python 3.9.  **
+	![20й](https://user-images.githubusercontent.com/99865132/168006543-17a017f4-9ad0-4116-b779-d18bc5f393ee.png)
+	
 2. **Installing a folder with a project from the Github repository.**
 	* To get started, go to the main page of the repository.
+	![21й](https://user-images.githubusercontent.com/99865132/168006584-5026761c-1cf1-4511-8c8e-3ddd3e328ff6.png)
 	* Then click on the green **"Code"** button, then download the zip file.
+	![22й](https://user-images.githubusercontent.com/99865132/168006608-5b2d6d7d-693d-419d-9645-345967b915c1.png)
 	* The download of the project archive should begin.
 	* Then unzip the file to a regular folder.
 
