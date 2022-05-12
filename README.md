@@ -118,11 +118,23 @@ Uploading a project to a robot
 
 ![image](https://user-images.githubusercontent.com/99865132/168016282-2e53acec-6b26-42a3-96ac-a8fa1d6cd929.png)
 * This window will open
+
+
+![image](https://user-images.githubusercontent.com/99865132/168017318-6276e432-869f-4ff4-b523-548920565a0f.png)
 * To download the program, click on the **“load start”** button
+![image](https://user-images.githubusercontent.com/99865132/168017359-d755c6bf-7d9f-4584-9ce2-bbf7d8e6f1e4.png)
 * The **“start”** button is used to start the program.
+![image](https://user-images.githubusercontent.com/99865132/168017416-add425a2-c137-4b5e-a4cf-a455f787f0d6.png)
 * The **“stop”** button is used to stop the program.
+![image](https://user-images.githubusercontent.com/99865132/168017455-b3ae978a-d458-4afc-a7c1-c87898680699.png)
 * To start the test program, use the **“Raw”** button; at startup, just an image and FPS are displayed to check the performance.
+![image](https://user-images.githubusercontent.com/99865132/168017603-62b039e3-7b37-4ff1-8492-da1be4916322.png)
 * **“Video”** button is used to output video
+![image](https://user-images.githubusercontent.com/99865132/168017679-6458132b-4aca-41cb-942b-4bedf91158bd.png)
 * To connect to the robot, press the **“connect to robot”** button and then a window will pop up with connected devices via Wi-Fi
+![image](https://user-images.githubusercontent.com/99865132/168017717-5e7effe9-31f0-470d-89bb-933b0b58b37e.png)
 * Click on the top line
+
+
+![image](https://user-images.githubusercontent.com/99865132/168017830-fc9c3bbd-1db9-4b84-b633-ab05b43c246c.png)
 * After that, **Raspberry** will successfully connect to the program.
