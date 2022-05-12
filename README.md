@@ -35,6 +35,9 @@ autostart.py
 **autostart.py** as described above is a program that automatically starts when the robot is turned on. In order to load a launch program into **autostart.py**, for example, **qualification.py,** you need to:  
 * Open the **autostart.py** file.
 * Find the **import** line.
+
+
+![Безымянный](https://user-images.githubusercontent.com/99865132/168015534-51dd1125-0522-4c75-b545-280dd4f46cd3.png)
 * Enter the name of the file that should start automatically in this line.
 
 
@@ -47,6 +50,8 @@ Our robot is programmed with **PyCharm** and uses the **Python** language. Here 
 	* Next, select the Windows operating system.
 	* Click the **download** button.
 	* Next, the installation file will be downloaded.
+
+
 	![13й](https://user-images.githubusercontent.com/99865132/168006320-a603946c-1eb0-498d-ba2a-ac392610b678.png)
 	* After installation, open and run the file.
 	* Next, select the options you need.
@@ -54,6 +59,8 @@ Our robot is programmed with **PyCharm** and uses the **Python** language. Here 
 	* Go to the official **Python** website.
 	![14й](https://user-images.githubusercontent.com/99865132/168006348-5e8710ac-00d2-4672-b926-e78335f867d2.png)
 	* Click on the **download** button.
+
+
 	![15й](https://user-images.githubusercontent.com/99865132/168006375-5048e824-c618-4d20-9937-26fa530af35a.png)
 	* Scroll down, you will see a list of versions available for download, select **Python 3.9.**
 	![16й](https://user-images.githubusercontent.com/99865132/168006407-58c166cb-3fab-46ab-8094-a12b762814be.png)
@@ -68,10 +75,12 @@ Our robot is programmed with **PyCharm** and uses the **Python** language. Here 
 	* Then go to this section and select **Python 3.9.  **
 	![20й](https://user-images.githubusercontent.com/99865132/168006543-17a017f4-9ad0-4116-b779-d18bc5f393ee.png)
 	
-2. **Installing a folder with a project from the Github repository.**
+3. **Installing a folder with a project from the Github repository.**
 	* To get started, go to the main page of the repository.
 	![21й](https://user-images.githubusercontent.com/99865132/168006584-5026761c-1cf1-4511-8c8e-3ddd3e328ff6.png)
 	* Then click on the green **"Code"** button, then download the zip file.
+
+
 	![22й](https://user-images.githubusercontent.com/99865132/168006608-5b2d6d7d-693d-419d-9645-345967b915c1.png)
 	* The download of the project archive should begin.
 	* Then unzip the file to a regular folder.
@@ -95,11 +104,19 @@ Uploading a project to a robot
 * Click on the **“Open”** button.
 ![image](https://user-images.githubusercontent.com/99865132/168014556-9d52b9d5-df75-4ab7-8ae9-10c3529c0a0a.png)
 * By poking through the folders, find the unzipped **GitHub** repository **WRO-2022-Future-Engineers**.
+![image](https://user-images.githubusercontent.com/99865132/168015700-e785c8f4-9d19-4207-8f51-e97e365ab069.png)
 * You must open the project folder.
 * Launch **Raspberry** and connect to it via Wi-Fi.
 * Now return to **PyCharm** in the project files menu, select and open the **start_robot** program.
+![image](https://user-images.githubusercontent.com/99865132/168015999-05a4f1a2-c0e1-4568-b873-1c8687272920.png)
 * On the right side of the buttons at the top of the screen, click the **“Run”** button.
+
+
+![23й](https://user-images.githubusercontent.com/99865132/168016170-a953aee0-f539-4c81-955a-6c0ce166a7fe.png)
 * In the small window that opens, select **start_robot**
+
+
+![image](https://user-images.githubusercontent.com/99865132/168016282-2e53acec-6b26-42a3-96ac-a8fa1d6cd929.png)
 * This window will open
 * To download the program, click on the **“load start”** button
 * The **“start”** button is used to start the program.
