@@ -75,6 +75,8 @@ Our robot is programmed with **PyCharm** and uses the **Python** language. Here 
 	![22й](https://user-images.githubusercontent.com/99865132/168006608-5b2d6d7d-693d-419d-9645-345967b915c1.png)
 	* The download of the project archive should begin.
 	* Then unzip the file to a regular folder.
+	![image](https://user-images.githubusercontent.com/99865132/168013974-a79810f4-d60a-42de-adf3-19209c9b8721.png)
+
 
 Connecting to PyBoard
 ---------------------------
@@ -89,7 +91,9 @@ Starting the robot
 Uploading a project to a robot
 ---------------------------
 * Open **PyCharm** and click on the **“File”** button.
+![18й](https://user-images.githubusercontent.com/99865132/168006479-0790610f-7114-4a1f-acc5-18fc41d6f2a8.png)
 * Click on the **“Open”** button.
+![image](https://user-images.githubusercontent.com/99865132/168014556-9d52b9d5-df75-4ab7-8ae9-10c3529c0a0a.png)
 * By poking through the folders, find the unzipped **GitHub** repository **WRO-2022-Future-Engineers**.
 * You must open the project folder.
 * Launch **Raspberry** and connect to it via Wi-Fi.
