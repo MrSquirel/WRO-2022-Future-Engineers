@@ -91,7 +91,8 @@ Connecting to PyBoard
 ---------------------------
 To connect to **PyBoard**, you need a microUSB cable, one end must be connected to **PyBoard**, and the other end to the computer, after which **PyBoard** will open as a USB flash drive and all that remains is to transfer the **main.py** file. Then you should wait until the red LED goes out and press the reset button on the board.
 ![WhatsApp Image 2022-05-13 at 23 50 18](https://user-images.githubusercontent.com/99865132/168299298-baf9ed55-fe87-40b9-a90d-a7972201fe51.jpeg)
-![WhatsApp Image 2022-05-13 at 23 55 37](https://user-images.githubusercontent.com/99865132/168299321-8f6fc2ff-f034-4eca-b796-0df86876b882.jpeg)
+![WhatsApp Image 2022-05-13 at 23 55 50](https://user-images.githubusercontent.com/99865132/168299441-4b97cbd2-4157-4e13-a1fd-110b2e5f8add.jpeg)
+
 
 
 Starting the robot
